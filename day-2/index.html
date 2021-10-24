@@ -11,11 +11,21 @@
     <script>
 
 function btn(){
-    let xhttp = new XMLHttpRequest()
 
-    xhttp.onload = function(){
+         //Created an XMLHttpRequest object
+
+    let xhttp = new XMLHttpRequest()                 
+
+        // Defined a callback function
+  
+        xhttp.onload = function(){                    
+            
+            // What to do when the response is ready
+            
             document.getElementById("txt").innerHTML = this.responseText;
     }
+
+    //// Sending a request
     xhttp.open("GET","sample.txt",true)
     xhttp.send()
 }
