@@ -13,7 +13,7 @@ const myProposal = new Promise((accept,reject)=>{
     }
     else{
 
-        setTimeout(()=>{ reject("I have you")},0000)
+        setTimeout(()=>{ reject("I hate you")},0000)
        
     }
 })
